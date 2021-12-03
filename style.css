@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
@@ -17,11 +18,10 @@ body {
 form {
     grid-area: content;
     padding: 1.5rem;
-    height:500px;
+    height:525px;
     background-color: white;
     border-radius: 10px;
     font-size: 12px;
-    font-family: 'Times New Roman', Times, serif;
 
     display: grid;
     grid-auto-rows: auto;
@@ -32,6 +32,7 @@ button {
     background-image: linear-gradient(to right, #BB43F1 , #59BFDE);
     margin-top: 10px;
     border-radius: 50px;
+    color: white;
 }
 
 form p {
@@ -45,6 +46,24 @@ textarea,
 select {
     border: none;
     border-bottom: 1px lightgray solid;
-    font-family: 'Times New Roman', Times, serif;
     outline: none;
+    margin-bottom: 10px;
 }
+
+.bold {
+    font-weight: bold;
+}
+label {
+    display: grid;
+    align-items: end;
+}
+
+
+main {
+    font-size: 3rem;
+    grid-area: content;
+    color: white;
+    margin-top: 50px;
+}
+
+
