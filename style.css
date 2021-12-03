@@ -50,6 +50,7 @@ select {
     border-bottom: 1px lightgray solid;
     outline: none;
     margin-bottom: 7px;
+    transition:all 0.6s
 }
 
 input::placeholder,
@@ -72,10 +73,19 @@ label {
   } */
 
 
-  input:required:focus:invalid,
-  select:required:focus:invalid {
-    border-color: #c00000;
+  input:focus:invalid,
+  select:focus:invalid {
+    border-bottom: 2px  #c00000 solid;
   }
+
+  input:focus:valid,
+  select:focus:valid {
+    border-bottom: 2px #61e906 solid;
+  }
+  /* input:valid {
+    background-color: #ffdddd;
+  } */
+
 
 /* form:valid {
     background-color: lightyellow;
