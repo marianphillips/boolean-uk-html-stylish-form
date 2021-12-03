@@ -1,0 +1,50 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top right, #59BFDE, #BB43F1);
+    height:100vh;
+    padding: 2rem;
+    display: grid;
+    grid-template:
+    ". content ." 1fr /
+    1fr 300px 1fr;
+}
+
+form {
+    grid-area: content;
+    padding: 1.5rem;
+    height:500px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+
+    display: grid;
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+button {
+    background-image: linear-gradient(to right, #BB43F1 , #59BFDE);
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+form p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+input, 
+textarea,
+select {
+    border: none;
+    border-bottom: 1px lightgray solid;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+}
